@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, SafeAreaView } from 'react-native';
 import logoImg from '../../assets/logo.png';
 
 import { styles } from './styles';
 
 export function Logo() {
 	return (
-		<View style={styles.container}>
+		<SafeAreaView style={styles.container}>
 			<Image
 				source={logoImg}
 				style={styles.logo}
@@ -14,6 +14,6 @@ export function Logo() {
 			<Text style={styles.title}>
 				Rotten Potatos
 			</Text>
-		</View>
+		</SafeAreaView>
 	);
 }

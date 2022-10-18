@@ -1,15 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flexGrow: 1,
-    flexBasis: 0,
-    padding: 10,
+  container:{
+
   },
   card: {
-    width: 125,
-    height: 156,
+    width: 175,
+    height: 230,
     borderRadius: 16,
+    margin: 15
   }
 });

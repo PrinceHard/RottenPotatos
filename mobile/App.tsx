@@ -8,7 +8,6 @@ import {
 import { Header } from './src/components/Header';
 import { Feed } from './src/screens/Feed';
 import { Loading } from './src/components/Loading';
-import { MovieCard } from './src/components/MovieCard';
 
 export default function App() {
   const [fontsLoad] = useFonts({
@@ -23,7 +22,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      <Header />
+      <Header/>
       {fontsLoad ? <Feed /> : <Loading />}
     </View>
   );

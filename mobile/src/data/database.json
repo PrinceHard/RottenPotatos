@@ -630,5 +630,92 @@
         "Type": "series",
         "totalSeasons": "1",
         "Response": "True"
+    },
+    {
+        "Title": "Loki",
+        "Year": "2021–",
+        "Rated": "TV-14",
+        "Released": "09 Jun 2021",
+        "Runtime": "N/A",
+        "Genre": "Action, Adventure, Fantasy",
+        "Director": "N/A",
+        "Writer": "Michael Waldron",
+        "Actors": "Tom Hiddleston, Owen Wilson, Eugene Cordero",
+        "Plot": "The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.”",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "Nominated for 6 Primetime Emmys. 10 wins & 47 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNTkwOTE1ZDYtODQ3Yy00YTYwLTg0YWQtYmVkNmFjNGZlYmRiXkEyXkFqcGdeQXVyNTc4MjczMTM@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.2/10"
+            }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "8.2",
+        "imdbVotes": "304,245",
+        "imdbID": "tt9140554",
+        "Type": "series",
+        "totalSeasons": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Squid Game",
+        "Year": "2021–",
+        "Rated": "TV-MA",
+        "Released": "17 Sep 2021",
+        "Runtime": "N/A",
+        "Genre": "Action, Drama, Mystery",
+        "Director": "N/A",
+        "Writer": "N/A",
+        "Actors": "Lee Jung-jae, Park Hae-soo, Hoyeon",
+        "Plot": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.",
+        "Language": "Korean, English, Urdu",
+        "Country": "South Korea",
+        "Awards": "Won 6 Primetime Emmys. 39 wins & 73 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.0/10"
+            }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "8.0",
+        "imdbVotes": "434,406",
+        "imdbID": "tt10919420",
+        "Type": "series",
+        "totalSeasons": "1",
+        "Response": "True"
+    },
+    {
+        "Title": "The Boys",
+        "Year": "2019–",
+        "Rated": "TV-MA",
+        "Released": "26 Jul 2019",
+        "Runtime": "31S min",
+        "Genre": "Action, Comedy, Crime",
+        "Director": "N/A",
+        "Writer": "Eric Kripke",
+        "Actors": "Karl Urban, Jack Quaid, Antony Starr",
+        "Plot": "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "Nominated for 6 Primetime Emmys. 8 wins & 61 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BOTEyNDJhMDAtY2U5ZS00OTMzLTkwODktMjU3MjFkZWVlMGYyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.7/10"
+            }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "8.7",
+        "imdbVotes": "475,667",
+        "imdbID": "tt1190634",
+        "Type": "series",
+        "totalSeasons": "3",
+        "Response": "True"
     }
 ]
