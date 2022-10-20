@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { apiClient } from '.';
 
-export const useFetch = ({path}: { path : string }) => {
+export const useFetch = (path: string) => {
     
     const [response, setResponse] = useState(null);
     const [loading, setLoading] = useState(true);

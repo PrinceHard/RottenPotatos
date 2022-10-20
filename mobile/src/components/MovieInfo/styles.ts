@@ -4,20 +4,16 @@ export const styles = StyleSheet.create({
   container: {
 
   },
-  title: {
+  title:{
 
   },
-  subTitle: {
+  subTitle:{
 
   },
-  text: {
+  text:{
 
   },
-  rating: {
+  rating:{
 
-  },
-  image:{
-    width: 100,
-    height: 200
   }
 });
