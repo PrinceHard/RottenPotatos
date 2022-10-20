@@ -1,6 +1,5 @@
 import { View, StyleSheet, StatusBar } from 'react-native';
 import {
-  useFonts,
   Montserrat_400Regular,
   Montserrat_600SemiBold,
   Montserrat_700Bold,
@@ -12,17 +11,21 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer, StackActions, StackRouter } from '@react-navigation/native';
 import { MovieInfo } from './src/components/MovieInfo';
 
+const MyTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary:'#15141F',
+  },
+};
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [fontsLoad] = useFonts({
-    Montserrat_400Regular,
-    Montserrat_600SemiBold,
-    Montserrat_700Bold,
-  })
+  
   return (
     <View style={styles.container}>
-      <NavigationContainer>
+      <NavigationContainer theme={MyTheme}>
         <Stack.Navigator screenOptions={{"header": Header}}>
           <Stack.Screen name='Home' component={Feed}/>
           <Stack.Screen name='MovieInfo' component={MovieInfo}/>
