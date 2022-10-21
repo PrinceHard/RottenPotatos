@@ -12,6 +12,7 @@ export function SearchBar({inputText, setInputText}: any) {
                 placeholder="Pesquisar"
                 placeholderTextColor="#FFF"
                 onChangeText={setInputText}
+                value={inputText}
                 style={styles.bar}
             />
         </SafeAreaView>

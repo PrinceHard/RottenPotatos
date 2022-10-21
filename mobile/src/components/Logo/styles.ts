@@ -14,7 +14,6 @@ export const styles = StyleSheet.create({
     height: 36,
   },
   title:{
-    fontFamily: THEME.FONT_FAMILY.DEFAULT.BOLD,
     fontSize: 15,
     color: THEME.COLORS.TEXT,
     marginLeft: 5

@@ -7,13 +7,12 @@ export const styles = StyleSheet.create({
     alignSelf: 'stretch',
   },
   bar:{
-    fontFamily: THEME.FONT_FAMILY.DEFAULT.REGULAR,
     fontSize: THEME.FONT_SIZE.SM,
     paddingLeft: 20,
     height: 45,
     color: '#fff',
     borderRadius: 8,
-    backgroundColor: '#000'
+    backgroundColor: '#211F30'
   },
   icon:{
     color: '#fff',
