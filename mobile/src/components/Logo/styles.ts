@@ -7,14 +7,14 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 50,
-    marginLeft: 20    
+    marginRight: 10,  
   },
   logo:{
     width: 36,
     height: 36,
   },
   title:{
-    fontSize: 15,
+    fontSize: 18,
     color: THEME.COLORS.TEXT,
     marginLeft: 5
   }

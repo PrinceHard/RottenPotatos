@@ -9,7 +9,7 @@ import dataBase from '../../data/database.json'
 
 import { styles } from './styles';
 
-const numCardsPage = 5
+const numCardsPage = 6
 
 export function Feed({ navigation }: any) {
 
@@ -43,7 +43,7 @@ export function Feed({ navigation }: any) {
 
   const reset = useCallback(() => {
     setRefreshing(true)
-    setPage(1)
+    setPage(0)
     paginate()
   }, [])
 
