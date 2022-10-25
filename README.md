@@ -12,13 +12,13 @@ You will need the Expo App instaled in your smartphone, just go to your shop app
 1. Clone the repository and change the directory into the folders project.
 ```sh
 git clone https://github.com/PrinceHard/RottenPotatos.git
-cd RottenPotatos
+cd RottenPotatos/mobile
 ```
 
 2. Install the projects dependencies on your computer and run the project using Expo.
 ```sh
 npm install
-expo start
+npx expo start
 ```
 
 3. Open in your phone the Expo app and Scan the QR code that will appear on the terminal screen. 
