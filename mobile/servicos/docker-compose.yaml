@@ -1,0 +1,37 @@
+version: "3"
+services:
+  feeds:
+    image: rotten
+    build: ./dockerfiles/servicos/
+    hostname: feeds
+    expose:
+      - '5000'
+    volumes:
+      - './feeds:/servico'
+    command: python3 servico.py
+    networks:
+      marcasnet:
+        ipv4_address: 172.29.1.1
+  detalhes:
+    image: rotten
+    build: ./dockerfiles/servicos/
+    hostname: detalhes
+    expose:
+      - '5000'
+    volumes:
+      - './detalhes:/servico'
+    command: python3 servico.py
+    networks:
+      marcasnet:
+        ipv4_address: 172.29.1.2
+  bancodados:
+    image: mysql
+    hostname: bancodados
+    expose:
+      - '3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+    networks:
+      marcasnet:
+        ipv4_address: 172.29.1.3
+  
