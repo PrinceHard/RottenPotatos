@@ -7,13 +7,13 @@ export function MovieCard({navigation, item }: any) {
 
   const selectMovie = () => {
     console.log("clicou")
-    navigation.navigate("MovieInfo", item)
+    navigation.navigate("MovieInfo", {id: item.id})
   }
 
   return (
     <TouchableOpacity onPress={selectMovie}>
       <SafeAreaView style={styles.container}>
-        <Image source={{ uri: item.Poster }}
+        <Image source={{ uri: "http://192.168.15.9:5013/"+ item.poster }}
           style={styles.card} />
       </SafeAreaView>
     </TouchableOpacity>

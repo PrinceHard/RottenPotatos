@@ -5,7 +5,6 @@ import uuid from 'react-native-uuid';
 import { Header } from '../../components/Header';
 import { MovieCard } from '../../components/MovieCard';
 import { SearchBar } from '../../components/SearchBar';
-import dataBase from '../../data/database.json'
 
 import { styles } from './styles';
 
@@ -16,16 +15,21 @@ export function Feed({ navigation }: any) {
   const [page, setPage] = useState(1)
   const [refreshing, setRefreshing] = useState(false)
   const [inputText, setInputText] = useState('')
-  const [data, setData] = useState([{}])
+  const [data, setData] = useState<any>([])
 
   useEffect(() => {
-    if (inputText) {
-      axios.get(`http://www.omdbapi.com/?apikey=d95a64b&t=${inputText}`)
+    if (inputText.length > 0) {
+      axios.get(`http://192.168.15.9:5010/pesquisar/${inputText}`)
         .then((res) => {
-          setData(res.data)
+          console.log(res.data)
+          if (res.data) {
+            setData([res.data])
+          }
+        }).catch((err) => {
+          console.log(err)
         })
     } else {
-      paginate()
+      reset()
     }
   }, [inputText])
 
@@ -33,9 +37,16 @@ export function Feed({ navigation }: any) {
     if (inputText) {
       return
     }
-    setData(dataBase.filter((movie, index) => {
-      return index < page * numCardsPage
-    }))
+    axios.get(`http://192.168.15.9:5010/series/${page}/${numCardsPage}`)
+      .then((res) => {
+        console.log("linha 42" + res.data)
+        if (res.data.length > 0) {
+          setData([...data, ...res.data])
+        }
+      }
+      ).catch((err) => {
+        console.log(err)
+      })
     setPage(page + 1)
     setRefreshing(false)
     console.log(page)
@@ -57,18 +68,18 @@ export function Feed({ navigation }: any) {
     <View style={styles.container}>
       <Header />
       <SearchBar inputText={inputText} setInputText={setInputText} />
-      {inputText ? <MovieCard navigation={navigation} item={data} /> :
-        <FlatList
-          data={data}
-          onEndReached={paginate}
-          onEndReachedThreshold={0.05}
-          onRefresh={reset}
-          refreshing={refreshing}
-          keyExtractor={() => uuid.v4()?.toString()}
-          numColumns={2}
-          renderItem={renderItem}
-        />
-      }
+
+      <FlatList
+        data={data}
+        onEndReached={paginate}
+        onEndReachedThreshold={0.05}
+        onRefresh={reset}
+        refreshing={refreshing}
+        keyExtractor={() => uuid.v4()?.toString()}
+        numColumns={2}
+        renderItem={renderItem}
+      />
+
     </View>
   );
 }
